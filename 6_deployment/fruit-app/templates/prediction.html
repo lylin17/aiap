@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Predicted Fruit
+    </title>
+<link rel="stylesheet" href="/static/main.css">
+    <ul>
+		<a href="/">New Image </a>
+    </ul>
+</header>
+
+<body>
+    <div class="container">
+		{% block content %}
+			<img src={{ url_for('static',filename='predict.png') }} alt="Predict Image">
+		{% endblock %}
+    </div>
+</body>
+
+</html>

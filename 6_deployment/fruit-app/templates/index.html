@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Week 6 Fruit Classifier</title>
+</head>
+<link rel="stylesheet" href="/static/main.css">
+
+<body>
+  <div class="container">
+    <h1>
+      <center>Classification of Apples, Oranges and Pears</center>
+    </h1>
+
+    {% block content %}
+    {% for message in form.file.errors %}
+    <div class="flash">{{ message }}</div>
+    {% endfor %}
+
+    <form method=post enctype="multipart/form-data">
+	  {{ form.csrf_token }}
+	  {{ form.hidden_tag() }}
+      <br><br><br>  
+      {{ form.file.label }}
+      {{ form.file }}
+      <br><br>
+      {{ form.submit }}
+    </form>
+    {% endblock %}
+
+  </div>
+</body>
+
+</html>
