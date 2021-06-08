@@ -26,7 +26,7 @@ numpy==1.15.4
 numpydoc==0.8.0
 olefile==0.46
 packaging==18.0
-Pillow==4.2.1
+Pillow==8.2.0
 protobuf==3.6.1
 Pygments==2.3.1
 pyparsing==2.3.0
